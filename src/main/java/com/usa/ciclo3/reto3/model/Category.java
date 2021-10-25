@@ -44,17 +44,17 @@ public class Category implements Serializable {
         this.description = description;
     }
 
-    public List<Partyroom> getPartyrooms() {
-        return partyrooms;
+    public List<Cloud> getClouds() {
+        return clouds;
     }
 
-    public void setPartyrooms(List<Partyroom> partyroom) {
-        this.partyrooms = partyroom;
+    public void setClouds(List<Cloud> cloud) {
+        this.clouds = cloud;
     }
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "category")
     @JsonIgnoreProperties("category")
-    private List<Partyroom> partyrooms;
+    private List<Cloud> clouds;
 
 
 }

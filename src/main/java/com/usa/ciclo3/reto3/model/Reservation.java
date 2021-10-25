@@ -49,12 +49,12 @@ public class Reservation implements Serializable {
                 this.status = status;
         }
 
-        public Partyroom getPartyroom() {
-                return partyroom;
+        public Cloud getCloud() {
+                return cloud;
         }
 
-        public void setPartyroom(Partyroom partyroom) {
-                this.partyroom = partyroom;
+        public void setCloud(Cloud cloud) {
+                this.cloud = cloud;
         }
 
         public Client getClient() {
@@ -76,7 +76,7 @@ public class Reservation implements Serializable {
         @ManyToOne
         @JoinColumn(name = "id")
         @JsonIgnoreProperties("reservations")
-        private Partyroom partyroom;
+        private Cloud cloud;
 
         @ManyToOne
         @JoinColumn(name = "idClient")

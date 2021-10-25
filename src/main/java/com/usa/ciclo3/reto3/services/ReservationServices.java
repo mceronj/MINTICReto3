@@ -1,6 +1,5 @@
 package com.usa.ciclo3.reto3.services;
 
-import com.usa.ciclo3.reto3.model.Partyroom;
 import com.usa.ciclo3.reto3.model.Reservation;
 import com.usa.ciclo3.reto3.repository.ReservationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
