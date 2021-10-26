@@ -32,7 +32,7 @@ public class Message implements Serializable {
                 this.messageText = messageText;
         }
 
-        public Cloud getMessage() {
+        public Cloud getCloud() {
                 return cloud;
         }
 
